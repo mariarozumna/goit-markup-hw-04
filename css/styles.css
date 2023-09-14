@@ -139,6 +139,10 @@ border-bottom: 1px solid #e7e9fc
 .hero-section {
     padding: 188px 0;
     background-color: var(--c-primary);
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
@@ -217,7 +221,6 @@ flex-basis: calc((100% - 3 * 24px) / 4);
     margin-bottom: 72px;
 }
 .team-list {
-    background-color: var(--c-background);
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
