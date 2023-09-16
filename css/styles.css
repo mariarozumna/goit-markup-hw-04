@@ -89,7 +89,6 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     color: var(--c-primary);
    }
 .nav-list {
-    position: relative;
     color: var(--c-pressed-state);
     display: flex;
     gap: 40px;
@@ -98,6 +97,8 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
    }
 .nav-link::after {
     position: absolute;
+    display: block;
+    width: 100%;
     left: 0;
     bottom: -1px;
     height: 4px;
@@ -106,9 +107,10 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     content: '';
 }
    .nav-link {
+    position: relative;
     display: inline-block;
     padding: 24px 0;
-       color: var(--c-primary-brand);
+       color: #404bbf;
        font-size: 16px;
        font-weight: 500;
        line-height: 1.5;
@@ -389,8 +391,11 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 100px 0;
 }
 .footer-conteiner {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
     display: flex;
-    align-items: baseline;
+    align-items: baseline ;
 }
 .footer-logo-conteiner {
     margin-right: 120px;
