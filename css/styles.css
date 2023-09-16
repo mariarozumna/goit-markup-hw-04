@@ -390,12 +390,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--c-primary);
     padding: 100px 0;
 }
-.footer-conteiner {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-    display: flex;
-    align-items: baseline ;
+.footer-inner {
+display: flex;
+align-items: baseline ;
 }
 .footer-logo-conteiner {
     margin-right: 120px;
