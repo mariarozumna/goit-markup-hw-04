@@ -95,27 +95,31 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     flex-grow: 1;
     align-items: center;   
    }
-.nav-link::after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--c-pressed-state);
-    border-radius: 2px;
-    content: '';
-}
    .nav-link {
-    position: relative;
     display: inline-block;
     padding: 24px 0;
-       color: #404bbf;
+       color: var(--c-primary);
        font-size: 16px;
        font-weight: 500;
        line-height: 1.5;
        letter-spacing: 0.02em;
-       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .current {
+    color: #404BBF;
+    position: relative;
+   }
+   .nav-link.current::after {
+       content:"";
+       position: absolute;
+       display: block;
+       width: 100%;
+       left: 0;
+       bottom: -1px;
+       height: 4px;
+       background-color: var(--c-pressed-state);
+       border-radius: 2px;
+       color: var(--c-pressed-state);
    }
 .nav-link:active {
        color: var(--c-primary-brand);
@@ -172,6 +176,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     text-align: center;
     max-width: 496px;
     margin: 0 auto;
+    margin-bottom: 48px;
 }
 .hero-button {
     display: block;
@@ -366,7 +371,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-info {
     display: flex;
     padding: 32px 16px;
-    margin-bottom: 8px;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid #E7E9FC;
